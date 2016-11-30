@@ -1,0 +1,27 @@
+{
+  "name": "express-basics",
+  "version": "1.0.0",
+  "description": "https://teamtreehouse.com/library/express-basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdngr/treehouse-express-basics.git"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "JavaScript"
+  ],
+  "author": "Kevin Fitzhenry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fitzonreee/express-basics.git"
+  },
+  "homepage": "https://github.com/hdngr/treehouse-express-basics#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
