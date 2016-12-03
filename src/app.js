@@ -20,8 +20,10 @@ app.get('/blog/:title?', function(req, res){
   if (title === undefined) {
     res.send(posts);
   } else {
-    var post = posts[title];
-    res.send(post);
+    // if the post doesn't not exist, define it as an empty object
+    var post = posts[title] || {title: "error", description: "This post does not exist"};
+    res.render('post', {post: post});
+    // console.log(post);
   }
 
 });

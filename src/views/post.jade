@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title #{post.title}
+  body
+    section.post
+      .container
+        a(href="").text-faded View All
+        .row
+          .small-12.columns
+            h2.section-heading #{post.title}
+            hr.light
+            article 
+              p #{post.description}
+  
