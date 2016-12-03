@@ -1,0 +1,14 @@
+{
+  "I need to run more!": {
+    "title": "I really need to run more!",
+    "description": "I want to be able to run a mile in under 6 minutes. In order to do this, I need to run more often to increase my lung capacity and I need to stretch more to take care of my muscles."
+  },
+  "CrossFit is cool!": {
+    "title": "CrossFit is cool",
+    "description":"CrossFit is cool, but you don't need to do CrossFit, just do functional excersise. Bodyweight movements and Olympic weightlifting."
+  },
+  "I want to do a triathon!": {
+    "title": "Traning for a triathon",
+    "description":"I've always wanted to do a triathon. I need to start running more, biking more, and swimming in order to be prepared."
+  }
+}
