@@ -9,8 +9,16 @@ app.get('/', function(req, res) {
   res.send("<h1>This is the index route!</h1>");
 });
 
+// GET all posts
 app.get('/blog', function(req, res){
   res.send(posts);
+});
+
+// GET single post
+app.get('/blog/:title', function(req, res){
+  var title = req.params.title;
+  var post = posts[title];
+  res.send(post);
 });
 
 app.listen(3000, function() {
@@ -18,5 +26,7 @@ app.listen(3000, function() {
 });
 
 // Run your server in one terminal tab using nodemon --debug src/app.js
+// Run node-inspector in another tab
+
 // nodemon --debug-brk src/app.js always you do insert debugger; anywhere in your code that you want it to break on
 // node-inspector -p to get the debugging URL
