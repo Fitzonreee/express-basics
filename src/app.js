@@ -20,6 +20,9 @@ app.set('views', __dirname + '/views')
 
 app.get('/', function(req, res) {
   // res.send("<h1>This is the index route!</h1>");
+  var path = req.path;
+  res.locals.path = path;
+  // console.log(path);
   res.render('index');
 });
 
