@@ -21,6 +21,8 @@ app.get('/blog/:title?', function(req, res){
 
   if (title === undefined) {
     res.send(posts);
+    // Left off here
+    // res.render('blog');
   } else {
     // if the post doesn't not exist, define it as an empty object
     var post = posts[title] || {title: "error", description: "This post does not exist"};
