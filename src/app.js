@@ -3,6 +3,11 @@
 var express = require('express'),
       posts = require('./mock/posts.json');
 
+// Turn posts into an array of objects from posts.json file
+var postLists = Object.keys(posts).map(function(value){return posts[value]})
+
+// console.log(postLists);
+
 // Require routes from it's own file
 // require(routes.js)(app);
 
@@ -23,9 +28,8 @@ app.get('/blog/:title?', function(req, res){
   var title = req.params.title;
 
   if (title === undefined) {
-    res.send(posts);
-    // Left off here
-    // res.render('blog');
+    // res.send(posts);
+    res.render('blog', {posts: postLists});
   } else {
     // if the post doesn't not exist, define it as an empty object
     var post = posts[title] || {title: "error", description: "This post does not exist"};
