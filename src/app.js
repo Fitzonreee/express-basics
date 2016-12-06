@@ -51,3 +51,6 @@ app.listen(3000, function() {
 
 // nodemon --debug-brk src/app.js always you do insert debugger; anywhere in your code that you want it to break on
 // node-inspector -p to get the debugging URL
+
+// npm install -g express-generator
+// express <project name>
