@@ -3,6 +3,9 @@
 var express = require('express'),
       posts = require('./mock/posts.json');
 
+// Require routes from it's own file
+// require(routes.js)(app);
+
 var app = express();
 
 app.use('/static', express.static(__dirname + '/public'));
