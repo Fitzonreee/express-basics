@@ -26,7 +26,7 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/blog/:title?', function(req, res){
+app.get('/blog/:title?', function(req, res) {
 
   var title = req.params.title;
 
@@ -40,6 +40,15 @@ app.get('/blog/:title?', function(req, res){
     // console.log(post);
   }
 
+});
+
+app.get('/posts', function(req, res) {
+  // /posts?raw=true
+  if (req.query.raw) {
+    res.json(posts)
+  } else {
+    res.json(postLists);
+  }
 });
 
 app.listen(3000, function() {
