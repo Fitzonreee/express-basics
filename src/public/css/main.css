@@ -1,10 +1,7 @@
 /***************************
 Base styles
 ***************************/
-* {
-  font-family: 'Lato', sans-serif;
-  color: #465058;
-}
+* {font-family: 'Lato', sans-serif;}
 h1 {font-weight: 400;}
 p {font-weight: 100}
 
@@ -19,7 +16,43 @@ a {text-decoration: none;}
 Flexbox Navigation - Main Styles
 ***********************************/
 
+/* .main-header and .nav are Flex containers */
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
 
+.main-header {
+  padding-top: 2em;
+}
+
+.site-logo {
+  align-self: center;
+}
+
+.site-logo img {
+  width: 110px;
+}
+
+.nav {
+  margin-top: 1.5em
+}
+
+.nav a {
+  display: block;
+  color: #465058;
+  font-size: 1.125em;
+  font-weight: 100;
+  text-align: center;
+  padding: 0.4em;
+  border-bottom: 1px solid #ebecec;
+}
+
+.nav a:hover {
+  color: #0b0b0b;
+  border-bottom-color: #0b0b0b;
+}
 
 
 
@@ -29,3 +62,26 @@ Flexbox Navigation - Main Styles
 /***********************************
 Flexbox Navigation - Media Querires
 ***********************************/
+/* Device is 769px or wider */
+@media (min-width: 769px) {
+  .main-header {
+    height: 200px;
+    justify-content: flex-end;
+  }
+  .site-logo img {
+    width: 140px;
+  }
+  .nav {
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav a {
+    border-bottom-color: transparent;
+  }
+}
+
+/* Device is 1025px or wider */
+@media (min-width: 1025px) {
+  
+}
