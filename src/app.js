@@ -55,6 +55,8 @@ app.listen(3000, function() {
   console.log("The Front End server is running on port 3000!");
 });
 
+// cd to src folder and run nodemon app.js
+
 // Run your server in one terminal tab using nodemon --debug src/app.js
 // Run node-inspector in another tab
 
