@@ -88,14 +88,12 @@ Flexbox Navigation - Media Querires
   }
   .site-logo {
     margin-right: auto;
-    align-self: center;
   }
   .nav {
     margin-top: 0;
   }
   .nav li {
-    margin-left: 0.65em;
-    margin-right: 0.65em;
+    margin: 0 0.65em;
     align-self: center;
   }
 }
